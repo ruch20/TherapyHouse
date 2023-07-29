@@ -24,8 +24,7 @@
       </div>
     </div>
  
- <h2>Below are the images of the website. 
- Since this project uses php for backend configuration and MySql database, you will need Xampp to run it successfully</h2>
+ <h2>Below are the images of the website.</h2>
  
 ![home](https://user-images.githubusercontent.com/98754992/236260067-41eb77a7-a095-4ec9-a48b-222f6bcb77c3.jpeg)
 ![aboutus](https://user-images.githubusercontent.com/98754992/236259852-272c61bc-1662-4b3c-9ad0-372be31615c2.jpeg)
