@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Therapy House</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+    
+    ::-webkit-scrollbar {
+  display: none;
+
+      }
+      textarea {
+        width: 90%;
+        height: 50px;
+        border: 1px solid #a74caf;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px 0;
+  background-color: rgb(239, 233, 224);
+  font-family: 'Georgia' sans-serif;
+}
+label{
+  font-size: 19px;
+  color: rgb(132, 129, 124);
+  font-family: 'Georgia' sans-serif;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="video-container">
+      <video src="img/homebg1.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
+   <div class="intro">
+   <div class="signup-form">
+        <h1> Feedback</h1>
+        <div class="txt">
+            <form action="feedbackcon.php" method="POST">
+                <i class="fa fa-user"></i>
+                <input type="text" placeholder="Name" name="Name">
+        </div>
+        <div class="txt">
+                <i class="fa fa-envelope"></i>
+                <input type="email" placeholder="Email" name="Emailid">
+        </div>
+        <div class="txt">
+          <i class="fa-solid fa-comment-dots"></i>
+          <label>&nbsp; Feedback</label>
+                <textarea type="text" placeholder="" name="feedback"></textarea>
+        </div>
+        <button class="btn" name="btn" onclick="closee()"> Submit </button>
+        <script>
+          function closee() {
+            // Open home.html in a new tab
+           // window.open('', '_self', '');
+           window.location.reload("main.php");
+            // Close the current tab
+            window.close();
+          }
+          </script>
+        </form>
+    </div>
+    
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>

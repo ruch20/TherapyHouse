@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style1.css">
+   
+</head>
+<body>
+   <div class="container">
+    
+       <h3>I am thinking of a number between 1-100.</h3>
+       <h3>Can you guess it?</h3>
+       
+        
+         <input type="text" placeholder="Num" id="guess" ><br>
+       <button  onclick="play()" id="my_btn">GUESS</button>
+       
+       
+       <p id="message1">No. Of Guesses: 0</p>
+       <p id="message2">Guessed Numbers are: None</p>
+       <p id="message3"></p>
+
+       <div class="modal" id="modal">
+        <div class="modal-inner">
+            <h2>GAME OVER!</h2>
+            
+            <h2 id = "score" name="score"> Game Score : 0</h2>
+            <h2 id = "progress3" name = "progress3"> Average Score: 0</h2>
+            <h2 id="notEnoughData" name="notEnoughData">hi</h2> 
+            <h2 id = "Notprogress" name= "Notprogress">hii </h2>
+            <h2 id = "progressing" name= "progressing">hi</h2> 
+            <button id="closeModal1" class="closeModal1" onclick="playagain()">Play Again</button>
+            <button id="closeModal" class="closeModal" onclick="closec()">Close</button>
+            <script>
+                function closec() {
+                  // Open home.html in a new tab
+                  
+                  //window.open('/registration101/main.php', '_blank');
+                 // window.open('', '_self', '');
+                  // Close the current tab
+                  window.close();
+                  
+                }
+
+                function playagain(){
+                  window.location.replace('numgame1.html');
+
+
+                }
+                </script>
+        </div>
+        <div id="myDiv">
+            
+            
+        </div>
+   
+        </div>
+     
+   </div>
+   <!--Script-->
+   <script src="GameCode.js"+versionUpdate></script>
+   
+</body>
+</html>
+

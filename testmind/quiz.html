@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed and Growth Mindset Form</title>
+    <link rel="stylesheet" href="mind.css" />
+    
+  </head>
+  <body>
+    <div class="video-container">
+      <video src="bgvideo.mp4" autoplay="autoplay" loop="loop" muted="muted"></video>
+
+    <div class="container">
+      <h1>MINDSET TEST</h1>
+      <form id="mindset-form">
+        <div class="form-group">
+          <label for="question1">1: How do you respond to failure?</label>
+          <select id="question1" name="question1">
+            <option value="0">I give up easily</option>
+            <option value="1">I keep trying</option>
+            <option value="2">I try a different approach</option>
+            <option value="3">I take it as a learning opportunity</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="question2">2: How do you view challenges?</label>
+          <select id="question2" name="question2">
+            <option value="0">As obstacles to avoid</option>
+            <option value="1">As opportunities to learn</option>
+            <option value="2">As a chance to improve</option>
+            <option value="3">As a way to grow and develop</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="question3">3: How do you view criticism?</label>
+          <select id="question3" name="question3">
+            <option value="0">As a personal attack</option>
+            <option value="1">As a chance to defend myself</option>
+            <option value="2">As an opportunity to improve</option>
+            <option value="3">As a way to learn and grow</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="question4">4: How do you view success?</label>
+          <select id="question4" name="question4">
+            <option value="0">As proof of my abilities</option>
+            <option value="1">As a chance to celebrate</option>
+            <option value="2">As an opportunity to set new goals</option>
+            <option value="3">As a way to inspire and motivate others</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="question5">5: I believe that no matter what kind of person you are, it is always possible to make major changes for the better. </label>
+          <select id="question5" name="question5">
+            <option value="0">Strongly Disagree</option>
+            <option value="1">Disagree</option>
+            <option value="2">Agree</option>
+            <option value="3">Strongly Agree</option>
+          </select>
+        </div>
+          <div class="form-group">
+            <label for="question6">6: I believe that my intelligence and abilities are fixed traits that cannot be changed.</label>
+            <select id="question6" name="question6">
+              <option value="3">Strongly Disagree</option>
+            <option value="2">Disagree</option>
+            <option value="1">Agree</option>
+            <option value="0">Strongly Agree</option>
+            </select>
+          </div>
+            <div class="form-group">
+              <label for="question7">7: Is self harm the best way of coping with mental stress?</label>
+              <select id="question7" name="question7">
+                <option value="3">Strongly Disagree</option>
+                <option value="2">Disagree</option>
+            <option value="1">Agree</option>
+            <option value="0">Strongly Agree</option>
+              </select>
+            </div>
+              <div class="form-group">
+                <label for="question8">8: Human beings are basically good , but sometimes make terrible decision</label>
+                <select id="question8" name="question8">
+                  <option value="0">Strongly Disagree</option>
+                  <option value="1">Disagree</option>
+                  <option value="2">Agree</option>
+                  <option value="3">Strongly Agree</option>
+                </select>
+              </div>
+                <div class="form-group">
+                  <label for="question9">9: Do you think mental illness is a real illness and must be treated?</label>
+                  <select id="question9" name="question9">
+                    <option value="0">No I don't think mental illness is a real illness</option>
+                    <option value="1">I don't think one can treat mental illness. </option>
+                    <option value="2">Yes, I think mental illness is a real illness. </option>
+                    <option value="3">Yes, I think mental illness is a real illness and must be treated. </option>
+                  </select>
+                </div>
+                  <div class="form-group">
+                    <label for="question10">10: You can learn new things , but you can't really change  your basic intelligence
+                    </label>
+                    <select id="question10" name="question10">
+                      <option value="3">Strongly Disagree</option>
+                      <option value="2">Disagree</option>
+                  <option value="1">Agree</option>
+                  <option value="0">Strongly Agree</option>
+                    </select>
+                  </div>
+        <button id="submit-button" type="submit" onclick="popup()">Submit</button>
+      </form>
+      <script>
+        function popup(){
+          modal.classList.add("open");
+        };
+
+      </script>
+    </div>
+      
+  </div>
+        
+        <div class="modal" id="modal">
+          <div class="modal-inner">
+            
+              <h2 id="result" name="result">  </h2>
+              <h2 id="result2" name="result2">  </h2>
+              
+              <button id="closeModal1" class="closeModal1" onclick="playagain()">Test Again</button>
+              <button id="closeModal" class="closeModal" onclick="closeb()">Close</button>
+              <script>
+                  function closeb() {
+                    // Open home.html in a new tab
+                    //window.close();
+                    //window.open('/registration101/main.php', '_blank');
+                   // window.open('', '_self', '');
+                    // Close the current tab
+                    window.close();
+                    
+                  }
+                  function playagain(){
+                    window.location.replace('quiz.html');
+  
+  
+                  }
+                  </script>
+          </div>
+      </div>
+     
+      
+    
+    <script src="mindset.js"></script>
+  </body>
+</html>

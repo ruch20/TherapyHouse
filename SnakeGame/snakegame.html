@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnakeMania - Ek Gaming Katha</title>
+    <link rel="stylesheet" href="snakestyle.css">
+</head>
+<body>
+
+    <div class="body">
+        <!-- <div class="instructions">
+            <h3>Keyboard Instructions:</h3>
+            <ul>
+                <li>Use the arrow keys to move the snake around the board.</li>
+                <li>Eat the food to gain points and grow longer.</li>
+                <li>Avoid running into the walls or the snake's own body.</li>
+            </ul>
+        </div> -->
+    
+        <div id="scoreBtn">Score: 0</div>
+<!--         <div id="hiscoreBox">HiScore: 0</div>
+ -->        <div id="board"></div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-inner">
+         
+            <h2 id = "score" name="score"> Game Score : 0</h2>
+            <h2 id = "progress3" name = "progress3"> Average Score: 0</h2> 
+            <h2 id = "Notprogress" name= "Notprogress">hii </h2>
+            <h2 id="notEnoughData" name="notEnoughData">hi</h2> 
+            <h2 id = "progressing" name= "progressing">hi</h2> 
+            <button id="closeModal1" class="closeModal1" onclick="playagain()">Play Again</button>
+            <button id="closeModal" class="closeModal" onclick="closeb()">Close</button>
+            <script>
+                function closeb() {
+                  // Open home.html in a new tab
+                  //window.close();
+                  //window.open('/registration101/main.php', '_blank');
+                 // window.open('', '_self', '');
+                  // Close the current tab
+                  window.close();
+                  
+                }
+                function playagain(){
+                  window.location.replace('snakegame.html');
+
+
+                }
+                </script>
+        </div>
+    </div>
+</body>
+<script src="snake1.js"+versionUpdate></script>
+</html>
